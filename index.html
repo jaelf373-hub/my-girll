@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para ti ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="inicio">
+
+<h1>Para mi niña hermosa ❤️</h1>
+
+<p>
+Hoy no quería darte algo comprado,
+quería darte algo especial un pequeño lugar donde quedara un pedacito de nosotros :D
+</p>
+
+<button onclick="mostrarCarta()">
+Abrir sorpresa 💌
+</button>
+
+</div>
+
+
+<section id="carta" class="oculto">
+
+<h2>Una pequeña carta para ti</h2>
+
+<p>
+Gracias por llegar a mi vida y hacer que muchos momentos simples
+se sientan diferentes. gracias por que tu me has ayudado en mushisimas cosas 
+quizas por ti me esfuerzo tanto, por que no dejo de imaginar un futuro contigo.
+
+NO sabes la felicidad que siento al verte, cuando sonries, cuando me miras
+cuando me abrazas, cuando estoy contigo siento una calidez tan grandee que no puedo explicar
+
+Nunca pense llegar a enamorarme de esta manera, y me siento  muy feliz
+por que no siento que sea algo malo, Quiero darte todo de mi y que los dos mejoremos
+y salgamos adelante juntoos
+
+
+
+
+Feliz segundo mesesito ❤️
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2>Nuestros momentos 📸</h2>
+
+<div class="galeria">
+
+
+<div class="recuerdo" onclick="abrirRecuerdo('r1')">
+
+<img src="img/foto1.jpeg">
+
+<p id="r1">
+Ese día me gustó mucho porque simplemente estaba contigo,
+ayudandotete con tu proceso sobre tu mejor amigo, Quiero que puedas 
+apoyarte en mi cuando tengas tus dias malos, recuerda que nunca me irè de tu lado❤️
+</p>
+
+</div>
+
+
+
+<div class="recuerdo" onclick="abrirRecuerdo('r2')">
+
+<img src="img/foto2.jpeg">
+
+<p id="r2">
+este dia para mi fue muy especial por que algo que tango quiero como son los paisajes lo pude pasar con la persona que tanto amor le tengo, ✨
+</p>
+
+</div>
+
+
+
+
+<div class="recuerdo" onclick="abrirRecuerdo('r3')">
+
+<img src="img/foto3.jpeg">
+
+<p id="r3">
+Me gusta mirar esta foto porque me recuerda tu forma de ser
+y esos momentos donde solo somos nosotros, quisiera conocer cada estapa tuya, y prometerte que me enamoraria de cada etapa y faceta tuya,por que hasta el mas minimo error tuyo ante mis ojos es el mas bonito 🫶
+</p>
+
+</div>
+
+
+
+
+<div class="recuerdo" onclick="abrirRecuerdo('r4')">
+
+<img src="img/foto4.jpeg">
+
+<p id="r4">
+Quizas este dia no lo pase contigo, pero me alegrè mucho, por el simple hecho de que estabas feliz con tus abuelos de que ahora eres una persona diferente que es capaz de sonreir y lo unicoo que quiero es protegerte, hacer feliz a la niña de la foto por que a esa la niña la AMO con un amor muy puro un amor que siento con mayor intensidad cada dia que pasa..  ❤️
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="tarjetas">
+
+<h2>Cosas que me gustan de ti ✨</h2>
+
+
+<div class="card" onclick="mostrar('m1')">
+❤️ Tu forma de hacerme sonreír
+
+<p id="m1" class="mensaje">
+Me encanta que contigo puedo estar tranquilo,
+reírme por cualquier cosa y simplemente disfrutar el momento.
+</p>
+
+</div>
+
+
+
+<div class="card" onclick="mostrar('m2')">
+🌻 La tranquilidad que siento contigo
+
+<p id="m2" class="mensaje">
+Hay algo bonito en estar contigo,
+como si mi niño interior te buscara, aunque no lo creas hay facetas mias que casi solo has visto tu, contigoo
+los días normales son poquito mejores.
+</p>
+
+</div>
+
+
+
+<div class="card" onclick="mostrar('m3')">
+✨ Los momentos pequeños que terminan siendo recuerdos grandes
+
+<p id="m3" class="mensaje">
+A veces los momentos más simples son los que más recuerdo,
+porque tu haces parte de ellos. saber que tengo una persona tan especial en mi vida, que me apoya y no me deja solo me hace esforzarme cada dia que pasa
+</p>
+
+</div>
+
+
+
+<div class="card" onclick="mostrar('m4')">
+🫶 Que seas tú, con tu forma única de ser
+
+<p id="m4" class="mensaje">
+Me gusta la persona que eres,
+con tus ocurrencias, con todo lo malo que dices tener, pero si supieras que ante mis ojos, veo la mujer que de pequeño simpre anelè tener, no soy muy bueno con las palabras por que no se expresarme pero contigo quiero mejorar cada parte de mi..
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<section class="final">
+
+<h2>Y todavía quedan muchos momentos...</h2>
+
+<p>
+No busco un momento perfecto, busco una vida entera a tu lado, compartiendo
+ las risas cotidianas, los dias dificiles y la certeza de que, pase lo que pase, 
+ mi corazon siempre encuentra un hogar en ti...
+</p>
+
+<h1>Te quiero mucho ❤️</h1>
+
+</section>
+
+
+
+<script>
+
+
+function mostrarCarta(){
+
+document.getElementById("carta")
+.classList.remove("oculto");
+
+window.scrollTo({
+top:700,
+behavior:"smooth"
+});
+
+}
+
+
+
+function mostrar(id){
+
+let texto = document.getElementById(id);
+
+if(texto.style.display=="block"){
+
+texto.style.display="none";
+
+}else{
+
+texto.style.display="block";
+
+}
+
+}
+
+function abrirRecuerdo(id){
+
+let recuerdo = document.getElementById(id);
+
+
+if(recuerdo.style.display=="block"){
+
+recuerdo.style.display="none";
+
+}
+
+else{
+
+recuerdo.style.display="block";
+
+}
+
+
+}
+
+</script>
+
+
+</body>
+</html>
